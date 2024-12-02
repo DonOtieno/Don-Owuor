@@ -1,0 +1,220 @@
+body.login-page {
+    background-image: url(DNFolder/jkuat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    color: black;
+}
+body.homepage {
+    background-color: rgba(228, 223, 223, 0.815);
+}
+
+header .logo-container {
+display: flex;
+align-items: left;
+justify-content: left;
+overflow: hidden;
+}
+head .logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain spect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+.menu-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: skyblue;
+    padding: 25px 50px;
+    color: white;
+    margin: 0;
+}
+.menu-links a:hover {
+    text-decoration: underline;
+}
+.menu-links a {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Style specific to the login page */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.822);
+    padding: 30px;
+    border-radius: 10px;
+    box-sizing: 20%;
+    box-shadow: #808080;
+    width: 300px;
+    height: 200px;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: deepskyblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgba(48, 48, 233, 0.842);
+}
+@media (max-width: 600px) {
+    .login-container {
+        padding: 15px;
+    }
+}
+.right-edge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+}
+/* Style text to appear at bottom of the UI */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.content {
+    flex: 1;
+}
+.footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}
+.footer p {
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+    opacity: 0;/* Start with the text hidden */
+    transform: translateY(20px);/* Start with the text slightly lower */
+    animation: slideIn 2s forwards;/* Apply the animation */
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-in {
+    animation: slideIn 1s forwards;
+}
+/* Styling the second navbar */
+ *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+ }
+ label.logo {
+   color: red; 
+   font-size: 35px;
+   line-height: 30px;
+   padding: 5px 10px;
+   font-weight: bold;
+ }
+ nav ul {
+    float: right;
+    margin-right: 20px;
+ }
+ nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 30px;
+ }
+ nav ul li a {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    text-transform: uppercase;
+ }
+ a:hover {
+    background-color: transparent;
+    border-bottom: 3px solid white;
+ }
+ /* sidebar */
+.sidebar {
+    display: block;
+    position: fixed;
+    top: 240px;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color:  rgba(17, 128, 41, 0.918);
+    padding: 20px;
+    z-index: 1;
+    border-radius: 10px;
+}
+.sidebar a { 
+    padding: 10px 0; 
+    text-decoration: none; 
+    font-size: 18px; 
+    color: white; 
+    display: block; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* Style for the fist link text */
+.sidebar a.link-one {
+    background-color: linen; /* Permanent background color */
+    pointer-events: none; /* Disable hover effect */
+    color: red;
+    font-weight: bold;
+}
+.sidebar a:not(.link-one):hover {
+    background-color: transparent;
+    border-bottom: 3px solid lightblue;
+}
+.sidebar a.underline {
+    border-bottom: 2px solid black;
+}
+
+
+          
